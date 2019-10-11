@@ -58,6 +58,11 @@ a:hover {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
+.card-blog card-footer {
+  font-size: 0.9rem;
+  min-height: 10vh;
+}
+
 .box-shadow-a,
 .button:hover {
   box-shadow: 0 0 0 4px #cde1f8;
@@ -1200,6 +1205,19 @@ footer .credits a {
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: .3rem;
+}
+
+.card-blog {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.card-blog img {
+  border-radius: 4px;
+  width: 100%;
+  height: 35vh;
 }
 
 @media (min-width: 577px) {
