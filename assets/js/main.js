@@ -147,6 +147,8 @@
     items: 1
   });
 
+  new WOW().init();
+  
   // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {
     $('.venobox').venobox({
