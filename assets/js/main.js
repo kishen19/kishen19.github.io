@@ -119,7 +119,7 @@
     var typed_strings = $('.text-slider-items').text();
     var typed = new Typed('.text-slider', {
       strings: typed_strings.split(','),
-      typeSpeed: 80,
+      typeSpeed: 100,
       loop: false,
       backDelay: 1100,
       backSpeed: 30
@@ -147,7 +147,7 @@
     items: 1
   });
 
-  new WOW().init();
+  // new WOW().init();
   
   // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {
