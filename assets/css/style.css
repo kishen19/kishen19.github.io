@@ -84,6 +84,12 @@ a:hover {
   overflow: hidden;
 }
 
+.card:hover {
+  box-shadow: 0 8px 24px rgba(24, 210, 110, 0.15);
+  transform: translateY(-4px) scale(1.01);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
 .bg-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
