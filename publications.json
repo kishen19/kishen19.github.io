@@ -1,0 +1,156 @@
+[
+  {
+    "category": "journal",
+    "title": "Improved FPT Algorithms for Deletion to Forest-like Structures",
+    "url": "https://link.springer.com/article/10.1007/s00453-023-01206-z",
+    "authors": ["Kishen N Gowda", "Aditya Lonkar", "Fahad Panolan", "Vraj Patel", "Saket Saurabh"],
+    "venue": "Algorithmica, 2024",
+    "year": 2024,
+    "selected": true,
+    "links": [
+      { "label": "Journal Version", "url": "https://link.springer.com/article/10.1007/s00453-023-01206-z" }
+    ]
+  },
+  {
+    "category": "conference",
+    "title": "UFO Trees: Practical and Provably-Efficient Parallel Batch-Dynamic Trees",
+    "url": "#",
+    "authors": ["Quinten De Man", "Atharva Sharma", "Kishen N Gowda", "Laxman Dhulipala"],
+    "venue": "PPoPP, 2026",
+    "year": 2026,
+    "selected": true
+  },
+  {
+    "category": "conference",
+    "title": "Fully-Dynamic Parallel Algorithms for Single-Linkage Clustering",
+    "url": "https://arxiv.org/abs/2506.18384",
+    "authors": ["Quinten De Man", "Laxman Dhulipala", "Kishen N Gowda"],
+    "venue": "SPAA, 2025",
+    "year": 2025,
+    "selected": true,
+    "links": [
+      { "label": "Conference Version", "url": "https://dl.acm.org/doi/abs/10.1145/3694906.3743315" },
+      { "label": "ArXiv", "url": "https://arxiv.org/abs/2506.18384" }
+    ]
+  },
+  {
+    "category": "conference",
+    "title": "Efficient Centroid-Linkage Clustering",
+    "url": "https://arxiv.org/abs/2406.05066",
+    "authors": ["MohammadHossein Bateni", "Laxman Dhulipala", "Willem Fletcher", "Kishen N Gowda", "D Ellis Hershkowitz", "Rajesh Jayaram", "Jakub Łącki"],
+    "venue": "NeurIPS, 2024",
+    "year": 2024,
+    "selected": true,
+    "links": [
+      { "label": "Conference Version", "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/58dfad018974500457f84bb845b66776-Paper-Conference.pdf" },
+      { "label": "ArXiv", "url": "https://arxiv.org/abs/2406.05066" },
+      { "label": "Code", "url": "https://github.com/kishen19/CentroidHAC" }
+    ]
+  },
+  {
+    "category": "conference",
+    "title": "It's Hard to HAC with Average Linkage!",
+    "url": "https://arxiv.org/abs/2404.14730",
+    "authors": ["MohammadHossein Bateni", "Laxman Dhulipala", "Kishen N Gowda", "D Ellis Hershkowitz", "Rajesh Jayaram", "Jakub Łącki"],
+    "venue": "ICALP, 2024",
+    "year": 2024,
+    "selected": true,
+    "links": [
+      { "label": "Conference Version", "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2024.18" },
+      { "label": "ArXiv", "url": "https://arxiv.org/abs/2404.14730" }
+    ]
+  },
+  {
+    "category": "conference",
+    "title": "Optimal Parallel Algorithms for Dendrogram Computation and Single-Linkage Clustering",
+    "url": "https://dl.acm.org/doi/10.1145/3626183.3659973",
+    "authors": ["Laxman Dhulipala", "Xiaojun Dong", "Kishen N Gowda", "Yan Gu"],
+    "venue": "SPAA, 2024",
+    "year": 2024,
+    "selected": true,
+    "links": [
+      { "label": "Conference Version", "url": "https://dl.acm.org/doi/10.1145/3626183.3659973" },
+      { "label": "ArXiv", "url": "https://arxiv.org/abs/2404.19019" },
+      { "label": "Code", "url": "https://github.com/kishen19/ParSLD" }
+    ]
+  },
+  {
+    "category": "conference",
+    "title": "Socially Fair Center-based and Linear Subspace Clustering",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-43412-9_43",
+    "authors": ["Sruthi Gorantla", "Kishen N Gowda", "Amit Deshpande", "Anand Louis"],
+    "venue": "ECML-PKDD, 2023",
+    "year": 2023,
+    "selected": true,
+    "links": [
+      { "label": "Conference Version", "url": "https://link.springer.com/chapter/10.1007/978-3-031-43412-9_43" },
+      { "label": "ArXiv", "url": "https://arxiv.org/abs/2208.10095" },
+      { "label": "Code", "url": "https://github.com/kishen19/Socially-Fair-Clustering" }
+    ]
+  },
+  {
+    "category": "conference",
+    "title": "Improved Bi-point Rounding Algorithms and a Golden Barrier for k-Median",
+    "url": "https://epubs.siam.org/doi/10.1137/1.9781611977554.ch38",
+    "authors": ["Kishen N Gowda", "Thomas Pensyl", "Aravind Srinivasan", "Khoa Trinh"],
+    "venue": "SODA, 2023",
+    "year": 2023,
+    "selected": true,
+    "links": [
+      { "label": "Conference Version", "url": "https://epubs.siam.org/doi/10.1137/1.9781611977554.ch38" },
+      { "label": "ArXiv", "url": "https://arxiv.org/abs/2210.13395" }
+    ]
+  },
+  {
+    "category": "conference",
+    "title": "Improved FPT Algorithms for Deletion to Forest-like Structures",
+    "url": "https://drops.dagstuhl.de/opus/volltexte/2020/13378/",
+    "authors": ["Kishen N Gowda", "Aditya Lonkar", "Fahad Panolan", "Vraj Patel", "Saket Saurabh"],
+    "venue": "ISAAC, 2020",
+    "venueUrl": "https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16174",
+    "year": 2020,
+    "selected": true,
+    "links": [
+      { "label": "Conference Version", "url": "https://drops.dagstuhl.de/opus/volltexte/2020/13378/" },
+      { "label": "ArXiv", "url": "https://arxiv.org/abs/2009.13949" },
+      { "label": "Slides", "url": "assets/files/publications/ISAAC_Presentation.pdf" }
+    ]
+  },
+  {
+    "category": "conference",
+    "title": "A Parameterized Perspective on Attacking and Defending Elections",
+    "url": "https://link.springer.com/chapter/10.1007%2F978-3-030-48966-3_21",
+    "authors": ["Kishen N Gowda", "Neeldhara Misra", "Vraj Patel"],
+    "venue": "IWOCA, 2020",
+    "venueUrl": "https://iwoca2020.labri.fr/",
+    "year": 2020,
+    "selected": true,
+    "links": [
+      { "label": "Conference Version", "url": "https://link.springer.com/chapter/10.1007%2F978-3-030-48966-3_21" },
+      { "label": "ArXiv", "url": "https://arxiv.org/abs/2005.03176" },
+      { "label": "Slides", "url": "assets/files/publications/Parameterized_Analysis_of_Two_Stage_Manipulated_Elections.pdf" }
+    ]
+  },
+  {
+    "category": "manuscript",
+    "title": "Parallel Hierarchical Agglomerative Clustering in Low Dimensions",
+    "url": "https://arxiv.org/pdf/2507.20047",
+    "authors": ["MohammadHossein Bateni", "Laxman Dhulipala", "Willem Fletcher", "Kishen N Gowda", "D Ellis Hershkowitz", "Rajesh Jayaram", "Jakub Łącki"],
+    "year": 2025,
+    "selected": true,
+    "links": [
+      { "label": "ArXiv", "url": "https://arxiv.org/pdf/2507.20047" }
+    ]
+  },
+  {
+    "category": "manuscript",
+    "title": "MV-IVF: Multi-Vector Retrieval via Multi-Vector Clustering",
+    "url": "assets/files/publications/mvivf.pdf",
+    "authors": ["Kishen N Gowda", "Laxman Dhulipala", "Lars Gottesbüren", "Rajesh Jayaram"],
+    "year": 2026,
+    "selected": true,
+    "links": [
+      { "label": "Manuscript", "url": "assets/files/publications/mvivf.pdf" }
+    ]
+  }
+]
