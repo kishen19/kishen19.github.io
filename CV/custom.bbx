@@ -1,0 +1,50 @@
+\ProvidesFile{custom.bbx}[Custom BibLaTeX Style]
+\RequireBibliographyStyle{standard}
+
+% \DeclareBibliographyDriver{article}{%
+%   \usebibmacro{bibindex}%
+%   \usebibmacro{begentry}%
+%   \textbf{\thefield{title}}\hfill \printfield{journaltitle}, \printfield{year}
+%   \newline
+%   \printnames[author]{author}%
+% }
+\newbibmacro*{alphaorder:mark}{%
+  \ifkeyword{abc}
+    {\textsuperscript{\emph{abc}}\hspace{1pt}}
+    {}%
+}
+
+\DeclareFieldFormat[inproceedings]{addendum}{%
+  \textcolor{SwishLineColour}{\textbf{#1}}%
+}
+
+\DeclareBibliographyDriver{article}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \hspace{-4pt}%
+  \textbf{\thefield{title}}\hfill%
+  {\sc\thefield{journaltitle}}~'$\thefield{year}$%
+  \newline
+  \printnames[author]{author}%
+}
+
+\DeclareBibliographyDriver{inproceedings}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \hspace{-4pt}%
+  \textbf{\thefield{title}}\hfill%
+  {\sc\thefield{booktitle}}~'$\thefield{year}$%
+  \newline%
+  \printnames[author]{author}%
+  \iffieldundef{addendum}{}{\newline\printfield{addendum}}%
+}
+
+\DeclareBibliographyDriver{unpublished}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \hspace{-4pt}%
+  \textbf{\thefield{title}}\hfill%
+  {\sc \thefield{note}} %
+  \newline%
+  \printnames[author]{author}%
+}

@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%
+% This CV example/template is based on my own
+% CV which I (lamely attempted) to clean up, so that
+% it's less of an eyesore and easier for others to use.
+%
+% LianTze Lim (liantze@gmail.com)
+% 23 Oct, 2022
+%
+\documentclass[a4paper,11pt,english]{curve}
+
+% Enable web-only bibliography formatting in custom.bbx.
+\newif\ifwebcv
+\webcvtrue
+
+
+% Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
+\PassOptionsToPackage{backend=biber, style=custom,sorting=ydnt,uniquename=init,defernumbers=true,maxbibnames=9}{biblatex}
+
+% Most commands and style definitions are in settings.sty.
+\usepackage{settings}
+
+% If you need to further customise your biblatex setup e.g. with \DeclareFieldFormat etc please add them here AFTER loading settings.sty. For example, to remove the default "[Online] Available:" prefix before URLs when using the IEEE style:
+\DefineBibliographyStrings{english}{url={\textsc{url}}}
+
+%% Only needed if you want a Publication List
+\addbibresource{bibliography.bib}
+
+%% Specify your last name(s) and first name(s) (as given in the .bib) to automatically bold your own name in the publications list. 
+%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+% \mynames{Lim/Lian\bibnamedelima Tze}
+
+%% You can specify multiple names like this, especially if you have changed your name or if you need to highlight multiple authors. See items 6–9 in the example "Journal Articles" output.
+\mynames{Gowda/Kishen\bibnamedelima N.,
+    Gowda/Kishen\bibnamedelima N,
+    Gowda$^*$/Kishen\bibnamedelima N}
+%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+
+% Change the fonts if you want
+\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
+  \usepackage{fontspec} 
+  %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage[medium,bold]{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\else % If you're using pdfLaTeX or latex
+  \usepackage[T1]{fontenc}
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\fi
+
+% Change the page margins if you want
+\geometry{left=1.8cm,right=1.8cm,top=1.5cm,bottom=1.5cm}
+
+% Gray-scale colors
+\definecolor{white}{HTML}{FFFFFF}
+\definecolor{black}{HTML}{000000}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{gray}{HTML}{5D5D5D}
+\definecolor{lightgray}{HTML}{999999}
+% Basic colors
+\definecolor{green}{HTML}{C2E15F}
+\definecolor{orange}{HTML}{FDA333}
+\definecolor{purple}{HTML}{D3A4F9}
+\definecolor{red}{HTML}{FB4485}
+\definecolor{blue}{HTML}{6CE0F1}
+% Text colors
+\definecolor{darktext}{HTML}{414141}
+\colorlet{text}{darkgray}
+\colorlet{graytext}{gray}
+\colorlet{lighttext}{lightgray}
+% Awesome colors
+\definecolor{awesome-emerald}{HTML}{00A388}
+\definecolor{awesome-skyblue}{HTML}{0395DE}
+\definecolor{awesome-red}{HTML}{DC3522}
+\definecolor{awesome-pink}{HTML}{EF4089}
+\definecolor{awesome-orange}{HTML}{FF6138}
+\definecolor{awesome-nephritis}{HTML}{27AE60}
+\definecolor{awesome-concrete}{HTML}{95A5A6}
+\definecolor{awesome-darknight}{HTML}{131A28}
+\colorlet{awesome}{awesome-red}
+
+% Change the colours if you want
+% \colorlet{SwishLineColour}{awesome-nephritis}
+% \colorlet{MarkerColour}{awesome-concrete}
+\definecolor{SwishLineColour}{HTML}{285f38}
+% \definecolor{SwishLineColour}{HTML}{DC3522}
+% \definecolor{MarkerColour}{HTML}{27AE60}
+\definecolor{MarkerColour}{HTML}{afb949}
+% \definecolor{MarkerColour}{HTML}{00A388}
+
+% Change the item prefix marker if you want
+% \prefixmarker{$\diamond$}
+
+%% Photo is only shown if "fullonly" is included
+% \includecomment{fullonly}
+\excludecomment{fullonly}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\leftheader{%
+  \centering%
+  {\Huge\bfseries\sffamily Kishen N Gowda}
+  
+  {\small Ph.D. Student in Computer Science, University of Maryland, College Park}
+  
+  \makefield{\faEnvelope[regular]}{\href{mailto:kishen19@umd.edu}{\texttt{kishen19@umd.edu}}}
+  \makefield{\faPhone}{(301)-792-7128}
+  \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/kishen19}{\texttt{kishen19}}}
+  \makefield{\faGithub}{\href{https://github.com/kishen19}{\texttt{kishen19}}}
+  \makefield{\faGlobe}{\href{https://kishen19.github.io}{\texttt{kishen19.github.io}}}
+}
+
+\rightheader{~}
+\begin{fullonly}
+\photo[r]{images/photo}
+\photoscale{0.13}
+\end{fullonly}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+\makeheaders[c]
+
+\input{1_summary}
+\makerubric{2_education}
+\makerubric{4_experience}
+\clearpage
+\input{3_publications}
+\makerubric{8_visits}
+\makerubric{6_teaching}
+\makerubric{8_talks}
+\makerubric{8_service}
+\makerubric{5_awards}
+\makerubric{7_skills}
+% \makerubric{8_leadership}
+% \makerubric{10_referee}
+
+\end{document}

@@ -1,0 +1,5 @@
+\ProvidesFile{custom.cbx}[Custom Citation Style]
+% \RequireCitationStyle{authoryear}
+\DeclareFieldFormat[article]{title}{\mkbibquote{#1}}  % Add quotes around the title for articles
+\DeclareFieldFormat[article]{author}{\textit{#1}}    % Make author names italic for articles
+

@@ -1,0 +1,13 @@
+%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own
+\makerubrichead{Publications}
+
+\nocite{*}
+
+%% If you just want everything in one list
+% \printbibliography[heading={none},notkeyword=chide]
+
+\printbibliography[heading={subbibliography},title={Journal Articles},type=article,notkeyword=chide]
+
+\printbibliography[heading={subbibliography},title={Conference Proceedings},type=inproceedings,notkeyword=chide]
+
+\printbibliography[heading={subbibliography},title={Manuscripts},type=unpublished,notkeyword=chide]
