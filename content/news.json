@@ -1,0 +1,68 @@
+{
+  "settings": {
+    "max_visible": 3,
+    "max_age_months": 18
+  },
+  "items": [
+  {
+    "id": "ufo-trees-nominee",
+    "date": "2026-02",
+    "text": "The UFO Trees paper was selected as a Best Paper Nominee at PPoPP 2026.",
+    "description": "Our work on practical, provably efficient parallel batch-dynamic trees received a Best Paper Nominee distinction.",
+    "date_note": "Using the PPoPP main-conference month, not a verified nomination-announcement month. Confirm if you prefer the latter.",
+    "sources": ["https://ppopp26.sigplan.org/program/program-PPoPP-2026/"],
+    "links": [{"label": "Paper", "url": "#ufo-trees"}]
+  },
+  {
+    "id": "spaa-clustering-tutorial",
+    "date": "2025-07",
+    "text": "Will be presenting a tutorial on parallel clustering at SPAA in Portland.",
+    "description": "I organized and presented a tutorial on parallel clustering at SPAA in Portland, Oregon.",
+    "sources": ["CV/6_teaching.tex", "https://spaa.acm.org/wp-content/uploads/2025/07/program.pdf"]
+  },
+  {
+    "id": "brown-theory-seminar",
+    "date": "2025-02",
+    "text": "Will be giving a talk on dendrograms and single-linkage clustering at the Brown Theory Seminar.",
+    "description": "I presented our work on optimal parallel algorithms for dendrogram computation and single-linkage clustering.",
+    "sources": ["https://theoryseminar.cs.brown.edu/Spring2025.html"],
+    "links": [{"label": "Paper", "url": "#parsld"}]
+  },
+  {
+    "id": "algoparc-workshop",
+    "date": "2025-03",
+    "text": "Will be attending the AlgoPARC workshop at the University of Hawaiʻi at Mānoa.",
+    "description": "I participated in the workshop on parallel algorithms and data structures at the University of Hawaiʻi at Mānoa.",
+    "sources": ["CV/8_visits.tex", "https://www.hawaii.edu/news/2025/04/09/workshop-parallel-algorithms-data-structures/"]
+  },
+  {
+    "id": "icerm-graph-algorithms",
+    "date": "2025-02",
+    "text": "Will be visiting ICERM at Brown for the program on fusing theory and practice of graph algorithms.",
+    "description": "I visited ICERM at Brown University for the program on connecting graph-algorithm theory and practice.",
+    "sources": ["CV/8_visits.tex", "https://icerm.brown.edu/about/nsf/reports/2024-2025-Annual-Report.pdf"]
+  },
+  {
+    "id": "dimacs-workshops",
+    "date": "2024",
+    "text": "Will be attending DIMACS workshops on high-dimensional metrics and fine-grained complexity at Rutgers.",
+    "description": "I participated in two DIMACS programs at Rutgers University.",
+    "date_todo": "Confirm the months or split this into two dated workshop announcements. The CV only gives 2024."
+  },
+  {
+    "id": "golden-barrier-talks",
+    "date": "2023",
+    "text": "Will be giving talks on the Golden Barrier for k-Median at Johns Hopkins and the Capital Area Theory Seminar.",
+    "description": "I presented this work at the Johns Hopkins Algorithms and Complexity Theory Seminar and the Capital Area Theory Seminar.",
+    "date_todo": "Confirm each talk's month; the CV only gives 2023. These can later become two announcements.",
+    "links": [{"label": "Paper", "url": "#golden-barrier"}]
+  },
+  {
+    "id": "capital-area-theory-seminar",
+    "date": "2023–2024",
+    "text": "Will be helping organize the Capital Area Theory Seminar and host visiting speakers at UMD.",
+    "description": "I helped organize the UMD CS Theory weekly seminar and hosted visiting speakers.",
+    "date_todo": "Confirm the announcement month. Preserve the CV's 2023–2024 service period until then."
+  }
+  ]
+}

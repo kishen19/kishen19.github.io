@@ -1,0 +1,23 @@
+# Pages can serve the already-generated HTML. No Jekyll plugins/build are needed.
+# Keep editable source, local backups, tests, and work-in-progress off the public site.
+exclude:
+  - experimental
+  - _build
+  - content
+  - templates
+  - tests
+  - build.py
+  - news.py
+  - preview.py
+  - validate.py
+  - README.MD
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
