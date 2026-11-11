@@ -39,7 +39,7 @@ def anchor(url, label, class_name=""):
 def publication_sort_key(pub):
     # Unposted submissions first; then all dated works share the same chronology.
     unposted = pub["category"] == "under_submission" and not pub.get("year")
-    return (0 if unposted else 1, -(pub.get("year") or 0), pub.get("order", 10000), pub["id"])
+    return (0 if unposted else 1, -(pub.get("year") or 0), -pub.get("order", 10000), pub["id"])
 
 
 def ordered_publications(publications=None):

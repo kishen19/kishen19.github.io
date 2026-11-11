@@ -4,9 +4,34 @@ from __future__ import annotations
 from datetime import date, datetime
 from html import escape
 import re
+from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 MONTHS = ("", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+INLINE_LINK = re.compile(r"\[([^\[\]\n]+)\]\(((?:[^\s()<>]|\([^\s()<>]*\))+)\)")
+
+
+def news_text(text):
+    """Support only [linked words](URL); escape all other text, including HTML."""
+    parts, end = [], 0
+    for match in INLINE_LINK.finditer(text):
+        label, url = match.groups()
+        try:
+            parsed = urlsplit(url)
+            external = parsed.scheme.lower() in ("http", "https") and bool(parsed.netloc)
+            local = not parsed.scheme and not parsed.netloc and not url.startswith("//")
+            valid = (external or local) and "\\" not in url and not any(ord(c) < 32 or ord(c) == 127 for c in url)
+        except ValueError:
+            valid = False
+        parts.append(escape(text[end:match.start()]))
+        if valid:
+            attrs = ' target="_blank" rel="noopener noreferrer"' if external else ""
+            parts.append(f'<a href="{escape(url, quote=True)}"{attrs}>{escape(label)}</a>')
+        else:
+            parts.append(escape(match.group()))
+        end = match.end()
+    parts.append(escape(text[end:]))
+    return "".join(parts)
 
 
 def news_date(value):
@@ -79,7 +104,7 @@ def render_news(config, today=None):
         machine = f' datetime="{escape(item["datetime"], quote=True)}"' if item["datetime"] else ""
         tag = "time" if item["datetime"] else "span"
         month = item["month"] or ""
-        return f'<li id="news-{item["id"]}" data-news-year="{item["year"]}" data-news-month="{month}" data-news-order="{item["index"]}"><{tag} class="news-date"{machine}>{escape(item["label"])}</{tag}><p>{escape(item["text"])}</p></li>'
+        return f'<li id="news-{item["id"]}" data-news-year="{item["year"]}" data-news-month="{month}" data-news-order="{item["index"]}"><{tag} class="news-date"{machine}>{escape(item["label"])}</{tag}><p>{news_text(item["text"])}</p></li>'
 
     age = settings["max_age_months"] if settings["max_age_months"] is not None else ""
     return f'''<aside class="lately" aria-labelledby="lately-title" data-news-limit="{settings['max_visible']}" data-news-max-age-months="{age}">

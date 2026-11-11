@@ -5,7 +5,7 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from news import news_date, news_groups, news_records, render_news
+from news import news_date, news_groups, news_records, news_text, render_news
 
 
 def record(identifier, when, **extra):
@@ -13,6 +13,20 @@ def record(identifier, when, **extra):
 
 
 class NewsTests(unittest.TestCase):
+    def test_inline_links(self):
+        markup = news_text("Our [paper](#mv-ivf) at [a workshop](https://example.org/?a=1&b=2).")
+        self.assertIn('<a href="#mv-ivf">paper</a>', markup)
+        self.assertIn('<a href="https://example.org/?a=1&amp;b=2" target="_blank" rel="noopener noreferrer">a workshop</a>.', markup)
+        self.assertEqual(news_text("[PDF](assets/files/paper.pdf)"), '<a href="assets/files/paper.pdf">PDF</a>')
+        self.assertIn('href="https://example.org/Topic_(paper)"', news_text("[topic](https://example.org/Topic_(paper))"))
+
+    def test_inline_links_escape_html_and_reject_unsafe_urls(self):
+        self.assertEqual(news_text('[<b>paper</b>](#paper)'), '<a href="#paper">&lt;b&gt;paper&lt;/b&gt;</a>')
+        for url in ("javascript:alert(1)", "data:text/html,test", "//example.org", "https:\\example.org", "https://[invalid"):
+            with self.subTest(url=url):
+                self.assertNotIn('<a ', news_text(f'[paper]({url})'))
+        self.assertEqual(news_text('[unfinished]( and <b>plain</b>'), '[unfinished]( and &lt;b&gt;plain&lt;/b&gt;')
+
     def test_labels_and_date_validation(self):
         self.assertEqual(news_date("2025-07"), (2025, 7, "Jul 2025", "2025-07"))
         self.assertEqual(news_date("2024-02-29")[2], "Feb 2024")

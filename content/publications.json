@@ -1,90 +1,19 @@
 [
   {
     "id": "ultrakmeans",
-    "order": 10,
+    "order": 20,
     "category": "conference",
     "title": "UltraKMeans: Fully Scalable and High Quality k-means",
     "authors": ["Xiaojun Dong", "Kishen N Gowda", "Jessica Shi", "MohammadHossein Bateni", "Laxman Dhulipala", "Xiaoen Ju", "Jakub Łącki"],
     "venue": "PPoPP",
     "year": 2027,
     "status": "to_appear",
-    "links": [],
+    "links": [{"label": "PDF", "url": "assets/files/publications/UltraKMeans.pdf"}],
     "source": "CV/bibliography.bib; PPoPP 2027 acceptance confirmed by Kishen, 2026-11-01"
   },
   {
-    "id": "chamfer-linkage",
-    "order": 20,
-    "category": "under_submission",
-    "title": "Chamfer-Linkage for Hierarchical Agglomerative Clustering",
-    "authors": ["Kishen N Gowda", "Willem Fletcher", "MohammadHossein Bateni", "Laxman Dhulipala", "D Ellis Hershkowitz", "Rajesh Jayaram", "Jakub Łącki"],
-    "venue": "arXiv",
-    "year": 2026,
-    "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2602.10444"}],
-    "source": "CV/bibliography.bib; arXiv:2602.10444"
-  },
-  {
-    "id": "low-outdegree",
-    "order": 40,
-    "category": "conference",
-    "title": "Faster Parallel Batch-Dynamic Algorithms for Low Out-Degree Orientation",
-    "authors": ["Guy Blelloch", "Andrew Brady", "Laxman Dhulipala", "Jeremy Fineman", "Kishen N Gowda", "Chase Hutton"],
-    "venue": "SODA",
-    "year": 2027,
-    "status": "to_appear",
-    "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2602.17811"}],
-    "source": "CV/bibliography.bib; arXiv explicitly confirms SODA 2027"
-  },
-  {
-    "id": "set-cover-exponential-clocks",
-    "order": 45,
-    "category": "journal",
-    "title": "Improved rounding algorithms for set cover via exponential clocks",
-    "authors": ["Kishen N Gowda", "Will Ma", "Aravind Srinivasan", "Renata Valieva"],
-    "venue": "Operations Research Letters",
-    "year": 2027,
-    "links": [{"label": "DOI", "url": "https://doi.org/10.1016/j.orl.2026.107553"}],
-    "source": "Publisher-deposited Crossref metadata: volume 71, article 107553, March 2027 issue; DOI resource matches Kishen's PII S0167637726001501. Retrieved 2026-11-01."
-  },
-  {
-    "id": "golden-barrier-journal",
-    "order": 50,
-    "category": "journal",
-    "title": "Improved Bi-point Rounding Algorithms and a Golden Barrier for k-Median",
-    "authors": ["Kishen N Gowda", "Thomas Pensyl", "Aravind Srinivasan", "Khoa Trinh"],
-    "venue": "TOPML",
-    "year": 2026,
-    "links": [{"label": "DOI", "url": "https://doi.org/10.1145/3817044"}],
-    "source": "CV/bibliography.bib; ACM automated access restricted"
-  },
-  {
-    "id": "ef1",
-    "order": 55,
-    "category": "conference",
-    "title": "Improved Parallel Algorithms for EF1 Allocations",
-    "authors": ["Kishen N Gowda", "D Ellis Hershkowitz", "Richard Z Huang", "Gregory Kehne"],
-    "venue": "WINE",
-    "year": 2026,
-    "status": "to_appear",
-    "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2605.16791"}],
-    "source": "WINE venue from CV/bibliography.bib; title and authors verified on arXiv; to-appear status confirmed by Kishen, 2026-11-01"
-  },
-  {
-    "id": "ufo-trees",
-    "order": 60,
-    "category": "conference",
-    "title": "UFO Trees: Practical and Provably-Efficient Parallel Batch-Dynamic Trees",
-    "authors": ["Quinten De Man", "Atharva Sharma", "Kishen N Gowda", "Laxman Dhulipala"],
-    "venue": "PPoPP",
-    "year": 2026,
-    "award": "Best Paper Nominee",
-    "selected": true,
-    "tags": ["Parallel algorithms", "Dynamic trees", "Data structures"],
-    "summary": "Develops parallel batch-dynamic tree data structures designed around both provable efficiency and practical performance.",
-    "links": [{"label": "DOI", "url": "https://doi.org/10.1145/3774934.3786431"}, {"label": "arXiv", "url": "https://arxiv.org/abs/2601.10706"}]
-  },
-  {
     "id": "mv-ivf",
-    "order": 70,
+    "order": 19,
     "category": "conference",
     "title": "MV-IVF: Multi-Vector Retrieval via Multi-Vector Clustering",
     "authors": ["Kishen N Gowda", "Laxman Dhulipala", "Lars Gottesbüren", "Rajesh Jayaram"],
@@ -100,11 +29,82 @@
       "caption": "Latency–recall results on representative datasets.",
       "href": "assets/files/publications/mvivf.pdf"
     },
-    "links": [{"label": "PDF", "url": "assets/files/publications/mvivf.pdf"}, {"label": "Workshop", "url": "https://vecdb-ws.github.io/vldb2026/papers.html"}]
+    "links": [{"label": "arXiv", "url": "https://arxiv.org/html/2611.09040v1"}]
+  },
+  {
+    "id": "low-outdegree",
+    "order": 18,
+    "category": "conference",
+    "title": "Faster Parallel Batch-Dynamic Algorithms for Low Out-Degree Orientation",
+    "authors": ["Guy Blelloch", "Andrew Brady", "Laxman Dhulipala", "Jeremy Fineman", "Kishen N Gowda", "Chase Hutton"],
+    "venue": "SODA",
+    "year": 2027,
+    "status": "to_appear",
+    "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2602.17811"}],
+    "source": "CV/bibliography.bib; arXiv explicitly confirms SODA 2027"
+  },
+  {
+    "id": "set-cover-exponential-clocks",
+    "order": 17,
+    "category": "journal",
+    "title": "Improved rounding algorithms for set cover via exponential clocks",
+    "authors": ["Kishen N Gowda", "Will Ma", "Aravind Srinivasan", "Renata Valieva"],
+    "venue": "Operations Research Letters",
+    "year": 2027,
+    "links": [{"label": "DOI", "url": "https://doi.org/10.1016/j.orl.2026.107553"}],
+    "source": "Publisher-deposited Crossref metadata: volume 71, article 107553, March 2027 issue; DOI resource matches Kishen's PII S0167637726001501. Retrieved 2026-11-01."
+  },
+  {
+    "id": "golden-barrier-journal",
+    "order": 16,
+    "category": "journal",
+    "title": "Improved Bi-point Rounding Algorithms and a Golden Barrier for k-Median",
+    "authors": ["Kishen N Gowda", "Thomas Pensyl", "Aravind Srinivasan", "Khoa Trinh"],
+    "venue": "TOPML",
+    "year": 2026,
+    "links": [{"label": "DOI", "url": "https://doi.org/10.1145/3817044"}],
+    "source": "CV/bibliography.bib; ACM automated access restricted"
+  },
+  {
+    "id": "ef1",
+    "order": 15,
+    "category": "conference",
+    "title": "Improved Parallel Algorithms for EF1 Allocations",
+    "authors": ["Kishen N Gowda", "D Ellis Hershkowitz", "Richard Z Huang", "Gregory Kehne"],
+    "venue": "WINE",
+    "year": 2026,
+    "status": "to_appear",
+    "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2605.16791"}],
+    "source": "WINE venue from CV/bibliography.bib; title and authors verified on arXiv; to-appear status confirmed by Kishen, 2026-11-01"
+  },
+  {
+    "id": "chamfer-linkage",
+    "order": 14,
+    "category": "under_submission",
+    "title": "Chamfer-Linkage for Hierarchical Agglomerative Clustering",
+    "authors": ["Kishen N Gowda", "Willem Fletcher", "MohammadHossein Bateni", "Laxman Dhulipala", "D Ellis Hershkowitz", "Rajesh Jayaram", "Jakub Łącki"],
+    "venue": "arXiv",
+    "year": 2026,
+    "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2602.10444"}],
+    "source": "CV/bibliography.bib; arXiv:2602.10444"
+  },
+  {
+    "id": "ufo-trees",
+    "order": 13,
+    "category": "conference",
+    "title": "UFO Trees: Practical and Provably-Efficient Parallel Batch-Dynamic Trees",
+    "authors": ["Quinten De Man", "Atharva Sharma", "Kishen N Gowda", "Laxman Dhulipala"],
+    "venue": "PPoPP",
+    "year": 2026,
+    "award": "Best Paper Nominee",
+    "selected": true,
+    "tags": ["Parallel algorithms", "Dynamic trees", "Data structures"],
+    "summary": "Develops parallel batch-dynamic tree data structures designed around both provable efficiency and practical performance.",
+    "links": [{"label": "DOI", "url": "https://doi.org/10.1145/3774934.3786431"}, {"label": "arXiv", "url": "https://arxiv.org/abs/2601.10706"}]
   },
   {
     "id": "parallel-hac-low-dimensions",
-    "order": 30,
+    "order": 12,
     "category": "under_submission",
     "title": "Parallel Hierarchical Agglomerative Clustering in Low Dimensions",
     "authors": ["MohammadHossein Bateni", "Laxman Dhulipala", "Willem Fletcher", "Kishen N Gowda", "D Ellis Hershkowitz", "Rajesh Jayaram", "Jakub Łącki"],
@@ -118,7 +118,7 @@
   },
   {
     "id": "dynamic-single-linkage",
-    "order": 80,
+    "order": 11,
     "category": "conference",
     "title": "Fully-Dynamic Parallel Algorithms for Single-Linkage Clustering",
     "authors": ["Quinten De Man", "Laxman Dhulipala", "Kishen N Gowda"],
@@ -134,7 +134,7 @@
   },
   {
     "id": "centroid-linkage",
-    "order": 90,
+    "order": 10,
     "category": "conference",
     "title": "Efficient Centroid-Linkage Clustering",
     "authors": ["MohammadHossein Bateni", "Laxman Dhulipala", "Willem Fletcher", "Kishen N Gowda", "D Ellis Hershkowitz", "Rajesh Jayaram", "Jakub Łącki"],
@@ -151,7 +151,7 @@
   },
   {
     "id": "hard-to-hac",
-    "order": 100,
+    "order": 9,
     "category": "conference",
     "title": "It's Hard to HAC with Average Linkage!",
     "authors": ["MohammadHossein Bateni", "Laxman Dhulipala", "Kishen N Gowda", "D Ellis Hershkowitz", "Rajesh Jayaram", "Jakub Łącki"],
@@ -167,7 +167,7 @@
   },
   {
     "id": "parsld",
-    "order": 110,
+    "order": 8,
     "category": "conference",
     "title": "Optimal Parallel Algorithms for Dendrogram Computation and Single-Linkage Clustering",
     "authors": ["Laxman Dhulipala", "Xiaojun Dong", "Kishen N Gowda", "Yan Gu"],
@@ -184,7 +184,7 @@
   },
   {
     "id": "fpt-forest-journal",
-    "order": 120,
+    "order": 7,
     "category": "journal",
     "title": "Improved FPT Algorithms for Deletion to Forest-like Structures",
     "authors": ["Kishen N Gowda", "Aditya Lonkar", "Fahad Panolan", "Vraj Patel", "Saket Saurabh"],
@@ -197,7 +197,7 @@
   },
   {
     "id": "socially-fair-clustering",
-    "order": 130,
+    "order": 6,
     "category": "conference",
     "title": "Socially Fair Center-based and Linear Subspace Clustering",
     "authors": ["Sruthi Gorantla", "Kishen N Gowda", "Amit Deshpande", "Anand Louis"],
@@ -214,7 +214,7 @@
   },
   {
     "id": "golden-barrier",
-    "order": 140,
+    "order": 5,
     "category": "conference",
     "title": "Improved Bi-point Rounding Algorithms and a Golden Barrier for k-Median",
     "authors": ["Kishen N Gowda", "Thomas Pensyl", "Aravind Srinivasan", "Khoa Trinh"],
@@ -230,7 +230,7 @@
   },
   {
     "id": "fpt-forest-conference",
-    "order": 150,
+    "order": 4,
     "category": "conference",
     "title": "Improved FPT Algorithms for Deletion to Forest-like Structures",
     "authors": ["Kishen N Gowda", "Aditya Lonkar", "Fahad Panolan", "Vraj Patel", "Saket Saurabh"],
@@ -247,7 +247,7 @@
   },
   {
     "id": "elections",
-    "order": 160,
+    "order": 3,
     "category": "conference",
     "title": "A Parameterized Perspective on Attacking and Defending Elections",
     "authors": ["Kishen N Gowda", "Neeldhara Misra", "Vraj Patel"],

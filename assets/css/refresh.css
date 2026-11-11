@@ -65,8 +65,8 @@ h2 > span, .personal-intro h1 > span, .writing-main h1 > span { color: var(--gre
 .curve-mint { fill: var(--mint); }
 .curve-sage { fill: #7ea88a; }
 .curve-pub { fill: var(--pub-paper); }
-.about { display: grid; grid-template-columns: minmax(300px, 380px) minmax(0, 1fr); grid-template-areas: 'portrait bio' 'news bio'; grid-template-rows: auto 1fr; gap: 24px 72px; align-items: start; padding-block: 64px 100px; }
-.about-portrait { grid-area: portrait; position: relative; margin-top: 18px; padding: 9px 10px 12px 0; }
+.about { display: grid; grid-template-columns: minmax(300px, 420px) minmax(0, 1fr); grid-template-areas: 'portrait bio' 'news bio'; grid-template-rows: auto 1fr; gap: 24px 48px; align-items: start; padding-block: 64px 100px; }
+.about-portrait { grid-area: portrait; position: relative; width: 100%; max-width: 380px; margin-top: 18px; padding: 9px 10px 12px 0; }
 .portrait-wrap { position: relative; z-index: 1; }
 .portrait-wrap::before { content: ''; position: absolute; inset: -14px -14px 8px 20px; background: var(--mint); border-radius: 43% 57% 51% 49% / 46% 41% 59% 54%; transform: rotate(-8deg); z-index: -1; }
 .portrait-wrap img { width: 100%; aspect-ratio: .94; object-fit: cover; object-position: center 35%; border-radius: 48% 52% 41% 59% / 42% 38% 62% 58%; }
